@@ -19,6 +19,18 @@ html, body {
   padding: 5px;
 }
 
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.column2 {
+  float: left;
+  width: 640px;
+  padding: 5px;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -53,6 +65,12 @@ a {
 ul {
   list-style-type: none;
   color: white;
+}
+
+.container6 {
+  float: left;
+  width: 100%;
+  padding: 5px;
 }
 
 .flip-box {
