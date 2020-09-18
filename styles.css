@@ -41,6 +41,10 @@ html, body {
   opacity: 80%;
 }
 
+.column1:hover {
+  opacity: 80%;
+}
+
 a {
   text-decoration: none;
 }
