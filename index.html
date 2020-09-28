@@ -1,47 +1,167 @@
-<!DOCTYPE html><html lang="en"><head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div.header {
+  float: top;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.desc {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.container {
+  float: left;
+  position: relative;
+  width: 20%;
+  margin: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+}
+
+div.info-container {
+  float: left;
+  position: relative;
+  width: 84%;
+  height: auto;
+  margin: 10px;
+  background-color: black;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-variant-caps: normal;
+  font-size: 25px;
+  color: white;
+  text-align: left;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  font-style: normal;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: white;
+}
+
+</style>
 </head>
 <title>Home Page</title>
 <body>
 
-<header>Alicia's Artist Website</header>
-
-<div class="container5">
-  <div class="desc">For More Information</div>
-<ul>
-  <li><a href="mailto:abreinke@yahoo.com" target="_blank">Email Me</a></li>
-  <li><a href="https://www.instagram.com/abtheavidartist/" target="_blank">Find Me on Instagram</a></li>
-  <li><a href="https://www.linkedin.com/in/alicia-breinke-619b2583/" target="_blank">Find Me on LinkedIn</a></li>
-</ul>
+<div class="header">
+  <div class="desc">Alicia's Art Website</div>
 </div>
 
-<div class="row">
-  <div class="column">
-    <a href="photo-work.html">
-    <img src="index-photolink.jpg" alt="bridge" style="width:100%">
-    <p>Photo Work</p>
-  </a>
+<div class="container">
+  <img src="link1-photo.jpg" alt="bridge" class="image">
+  <div class="overlay">
+    <div class="text"><a href="photo-work.html">Photo Work</a></div>
   </div>
-  <div class="column">
-    <a href="design-work.html">
-    <img src="index-digitallink.jpg" alt="paper birds" style="width:100%">
-    <p>Design Work</p>
-  </a>
-  </div>
-  <div class="column">
-    <a href="code-work.html">
-    <img src="index-codelink.jpg" alt="lightning" style="width:100%">
-    <p>Code Work</p>
-  </a>
 </div>
-<div class="column">
-    <a href="video-work.html">
-    <img src="index-videolink.jpg" alt="lantern" style="width:100%">
-    <p>Video Work</p>
-  </a>
+
+<div class="container">
+  <img src="link2-design.jpg" alt="origami cranes" class="image">
+  <div class="overlay">
+    <div class="text"><a href="design-work.html">Design Work</a></div>
   </div>
+</div>
+
+<div class="container">
+  <img src="link3-code.jpg" alt="lightning painting" class="image">
+  <div class="overlay">
+    <div class="text"><a href="code-work.html">Code Work</a></div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="link4-video.jpg" alt="red lantern" class="image">
+  <div class="overlay">
+    <div class="text"><a href="video-work.html">Video Work</a></div>
+  </div>
+</div>
+
+<div class="info-container">
+  <h3>For more information, feel free to visit the following pages.</h3>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/alicia-breinke-619b2583/" target="_blank">My LinkedIn Page</a></li>
+    <li><a href="https://www.instagram.com/abtheavidartist/" target="_blank">My Artist's Instagram Page</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+  </ul>
 </div>
 
 </body>
